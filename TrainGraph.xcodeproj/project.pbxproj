@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D9B8FB2EF023BDE8677005A /* Pods_TrainGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43177AA07F180340639FE7F /* Pods_TrainGraph.framework */; };
 		F500E51B207CC5710082E6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500E51A207CC5710082E6CC /* AppDelegate.swift */; };
 		F500E51D207CC5710082E6CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F500E51C207CC5710082E6CC /* ViewController.swift */; };
 		F500E520207CC5710082E6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F500E51E207CC5710082E6CC /* Main.storyboard */; };
 		F500E522207CC5710082E6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F500E521207CC5710082E6CC /* Assets.xcassets */; };
 		F500E525207CC5710082E6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F500E523207CC5710082E6CC /* LaunchScreen.storyboard */; };
+		F53A7D3D207E02DB001DD669 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A7D3C207E02DB001DD669 /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47BB1473F40EA7177D6E3ADF /* Pods-TrainGraph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainGraph.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrainGraph/Pods-TrainGraph.release.xcconfig"; sourceTree = "<group>"; };
+		BA0C849F5677084CF9B4DC7B /* Pods-TrainGraph.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainGraph.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrainGraph/Pods-TrainGraph.debug.xcconfig"; sourceTree = "<group>"; };
+		D43177AA07F180340639FE7F /* Pods_TrainGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F500E517207CC5710082E6CC /* TrainGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F500E51A207CC5710082E6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F500E51C207CC5710082E6CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		F500E521207CC5710082E6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F500E524207CC5710082E6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F500E526207CC5710082E6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53A7D3C207E02DB001DD669 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9B8FB2EF023BDE8677005A /* Pods_TrainGraph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F6DA7C801EB0D25B59FE6BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA0C849F5677084CF9B4DC7B /* Pods-TrainGraph.debug.xcconfig */,
+				47BB1473F40EA7177D6E3ADF /* Pods-TrainGraph.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C19158469C8864A5DF13A414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D43177AA07F180340639FE7F /* Pods_TrainGraph.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F500E50E207CC5710082E6CC = {
 			isa = PBXGroup;
 			children = (
 				F500E519207CC5710082E6CC /* TrainGraph */,
 				F500E518207CC5710082E6CC /* Products */,
+				8F6DA7C801EB0D25B59FE6BB /* Pods */,
+				C19158469C8864A5DF13A414 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				F500E521207CC5710082E6CC /* Assets.xcassets */,
 				F500E523207CC5710082E6CC /* LaunchScreen.storyboard */,
 				F500E526207CC5710082E6CC /* Info.plist */,
+				F53A7D3C207E02DB001DD669 /* CustomView.swift */,
 			);
 			path = TrainGraph;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F500E529207CC5710082E6CC /* Build configuration list for PBXNativeTarget "TrainGraph" */;
 			buildPhases = (
+				530745B764A0BC9489FA0653 /* [CP] Check Pods Manifest.lock */,
 				F500E513207CC5710082E6CC /* Sources */,
 				F500E514207CC5710082E6CC /* Frameworks */,
 				F500E515207CC5710082E6CC /* Resources */,
+				BCDB555945E75C9FA1BFD02E /* [CP] Embed Pods Frameworks */,
+				0F50CF1AC1ABA4ACF04DF7A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +161,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F50CF1AC1ABA4ACF04DF7A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainGraph/Pods-TrainGraph-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		530745B764A0BC9489FA0653 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrainGraph-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCDB555945E75C9FA1BFD02E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TrainGraph/Pods-TrainGraph-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/PieCharts/PieCharts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PieCharts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainGraph/Pods-TrainGraph-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F500E513207CC5710082E6CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53A7D3D207E02DB001DD669 /* CustomView.swift in Sources */,
 				F500E51D207CC5710082E6CC /* ViewController.swift in Sources */,
 				F500E51B207CC5710082E6CC /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +359,7 @@
 		};
 		F500E52A207CC5710082E6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA0C849F5677084CF9B4DC7B /* Pods-TrainGraph.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +375,7 @@
 		};
 		F500E52B207CC5710082E6CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47BB1473F40EA7177D6E3ADF /* Pods-TrainGraph.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
